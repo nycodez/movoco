@@ -1,0 +1,12 @@
+<?php
+require_once('inc/Logger.class.php');
+require_once('inc/Language.class.php');
+require_once('inc/MongoDB.class.php');
+require_once('inc/Model.class.php');
+require_once('inc/Auth.class.php');
+require_once('inc/Controller.class.php');
+require_once('inc/FormBuilder.class.php');
+require_once('inc/FormScrub.class.php');
+require_once('inc/Scaffold.class.php');
+require_once('inc/View.class.php');
+require_once('inc/Calendar.class.php');

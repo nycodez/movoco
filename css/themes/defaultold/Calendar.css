@@ -1,0 +1,66 @@
+.med_cal {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+.med_cal th {
+	font: .7em arial;
+}
+.med_cal a:link, .med_cal a:visited {
+	text-decoration: none;
+	color: gray;
+	font: 10px arial;
+}
+.med_cal_dayCell {
+	height: 40px;
+	font: .6em arial;
+}
+.med_cal_dayCellToday {
+	font: .6em arial;
+	font-weight: bold;
+	background-color: beige;
+}
+.med_cal_title {
+	font: .8em Arial;
+	text-align: center;
+}
+
+
+
+.big_cal {
+	border-spacing:0;
+	border-collapse:collapse;
+	margin: 20px;
+}
+.big_cal th {
+	font: .9em arial;
+	padding-bottom: 20px;
+}
+.big_cal a:link, .big_cal a:visited {
+	text-decoration: none;
+	color: black;
+	font-family: arial;
+}
+.big_cal_title {
+	font: 1.4em arial;
+	text-align: center;
+}
+.big_cal_numberSpan {
+	font: 1.4em arial;
+}
+.big_cal_dayCell {
+	font: .7em arial;
+	border: solid 1px black;
+	width: 140px;
+	height: 120px;
+	padding: 5px;
+}
+.big_cal_dayCellToday {
+	font: .7em arial;
+	border: solid 1px black;
+	font-weight: bold;
+	background-color: beige;
+	padding: 5px;
+}

@@ -2,7 +2,7 @@
 require_once('inc/config.inc.php');
 require_once('inc/modules.inc.php');
 
-if(isset($_REQUEST['string']))
+if($_REQUEST['string'])
 {
 	$mvcuri = explode('/', strtolower($_REQUEST['string']));
 	foreach($mvcuri as $k => $v)

@@ -1,16 +1,18 @@
 <html>
 <head>
 	<title>Testing MVC framework</title>
-	<style type="text/css">@import url(/css/header.css);</style>
-	<style type="text/css">@import url(/css/Scaffold.class.css);</style>
-	<style type="text/css">@import url(/css/Calendar.class.css);</style>
+	<style type="text/css">@import url(/css/themes/default/index.css);</style>
+	<style type="text/css">@import url(/css/themes/default/Scaffold.css);</style>
+	<style type="text/css">@import url(/css/themes/default/Calendar.css);</style>
 	<style type="text/css">@import url(/css/jquery.ui.all.css);</style>
 </head>
 <body>
 	<script type="text/javascript" src="/js/jquery.js"></script>
 	<script type="text/javascript" src="/js/jquery-ui.js"></script>
 	<script type="text/javascript" src="/js/basic.js.php"></script>
-	<div id=horizontalMenu>
+<div id=topDiv>
+<div id=mainHeader>
+	<div id=mainMenu>
 		<ul>
 			<li id="Home-menu"><a href="/">{home}</a>
 			</li>
@@ -69,4 +71,6 @@
 			</li>
 		</ul>
 	</div>
+</div>
+<div id=mainBody>
 

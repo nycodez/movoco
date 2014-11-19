@@ -1,36 +1,3 @@
-<style>
-body {
-/*background: #999; /* for non-css3 browsers */
-
-/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#E0F8F7'); /* for IE */
-/*background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#E0F8F7)); /* for webkit browsers */
-/*background: -moz-linear-gradient(top,  #fff,  #E0F8F7); /* for firefox 3.6+ */
-
-}
-.basicAccountingDiv {
-	border: solid 1px #dddddd;
-	margin: 6px;
-	padding: 6px;
-	float: left;
-	border-radius: 10px;
-	box-shadow: 5px 5px 4px #888888;
-	font-family: Arial;
-	color: #888888;
-	overflow: auto;
-}
-.basicAccountingDiv ul {
-	list-style-type: none;
-	margin: 5px;
-	padding: 5px;	
-}
-.basicAccountingDiv ul li a {
-	text-decoration: none;
-text-transform:capitalize;
-}
-.basicAccountingPageHeader {
-	font: 1.5em Arial;
-}
-</style>
 <?php
 
 echo Scaffold::BulletedMenu($tabs, $currentTab);

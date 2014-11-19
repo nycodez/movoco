@@ -1,0 +1,55 @@
+.scaffoldTable {
+	margin: auto;
+	margin-top: 50px;
+	padding: 10px;
+	width: 80%;
+}
+.scaffoldMenu {
+	padding: 5px 0 0 5px;
+	border-bottom: solid 1px black;
+}
+.scaffoldMenu ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+.scaffoldMenu ul li {
+	display: inline;
+	border: solid;
+	border-width: 1px 1px 0 1px;
+	margin: 0 0.5em 0 0;
+}
+.scaffoldMenu li a:link, .scaffoldMenu li a:visited {
+	padding: 0 1em;
+	text-decoration: none;
+	font: .8em arial;
+	color: black;
+}
+.scaffoldTable th, .scaffoldTable th {
+	text-transform: capitalize;
+}
+.scaffoldTable {
+	font: .8em arial;
+	color: black;
+}	
+.scaffoldTable a:link, .scaffoldTable a:visited {
+	text-decoration: none;
+	color: blue;
+}
+.selectedItem {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-bottom: 2px;
+	background: white;
+}
+.unselectedItem {
+	background-color: #eeeeee;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.scaffoldTable a {
+	text-decoration: none;
+}
+.scaffoldTable th {
+	text-align: left;
+}

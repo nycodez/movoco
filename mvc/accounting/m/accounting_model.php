@@ -1,5 +1,5 @@
 <?php
-class Billing_Model extends Model
+class Accounting_Model extends Model
 {
 	public function __construct($coll)
 	{

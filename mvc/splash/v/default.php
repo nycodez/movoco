@@ -33,3 +33,12 @@ foreach($tasks as $k => $v)
 ?>
 </div>
 
+<div class=splashBoxDiv id=splashAccounting><div class=title>{outstanding invoices}</div>
+<?php
+foreach($invoices as $k => $v)
+{
+	echo '<a href="/accounting/view/'. $v['_id'] .'">'. date("M j", strtotime($v['date'])) .' '. $v['balance'] .' '. $v['name'] .'</a><br />';
+}
+?>
+</div>
+

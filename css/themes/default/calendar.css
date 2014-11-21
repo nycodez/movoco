@@ -14,12 +14,18 @@
 	font: 10px arial;
 }
 .med_cal_dayCell {
-	height: 40px;
+	border-right: solid 1px gray;
+	border-top: solid 1px gray;
+	text-align:right;
+	height: 29px;
 	font: .6em arial;
 }
 .med_cal_dayCellToday {
+	border-right: solid 1px gray;
+	border-top: solid 1px gray;
+	text-align:right;
+	height: 29px;
 	font: .6em arial;
-	font-weight: bold;
 	background-color: beige;
 }
 .med_cal_title {

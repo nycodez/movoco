@@ -1,0 +1,23 @@
+.basicAccountingDiv {
+	border: solid 1px #dddddd;
+	margin: 6px;
+	padding: 6px;
+	float: left;
+	border-radius: 10px;
+	box-shadow: 5px 5px 4px #888888;
+	font-family: Arial;
+	color: #888888;
+	overflow: auto;
+}
+.basicAccountingDiv ul {
+	list-style-type: none;
+	margin: 5px;
+	padding: 5px;	
+}
+.basicAccountingDiv ul li a {
+	text-decoration: none;
+text-transform:capitalize;
+}
+.basicAccountingPageHeader {
+	font: 1.5em Arial;
+}

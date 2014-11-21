@@ -44,10 +44,10 @@ class Language
 }
 $lang = new Language();
 
-if(isset($_REQUEST['selectLanguage']['code']))
+if(isset($_REQUEST['languageSelector']['code']))
 {
-	$lang->ChangeLanguage($_REQUEST['selectLanguage']['code']);
-	unset($_REQUEST['selectLanguage']);
+	$lang->ChangeLanguage($_REQUEST['languageSelector']['code']);
+	unset($_REQUEST['languageSelector']);
 }
 
 $allLanguageList = array

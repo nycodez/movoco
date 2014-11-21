@@ -58,11 +58,11 @@ class Calendar
 			$next_year = $year + 1;
 		}
 
-		echo '<center><table id="'. $this->id .'" class="'. $this->class .'">';
+		echo '<table id="'. $this->id .'" class="'. $this->class .'">';
 		//	<tr><td rowspan=9 class=calendarSidebar><div id=calendarSidebarDiv></div></td></tr>
 		echo '<tr>
 			<th><a href=/event/default/'. $prev_year .'-'. $prev_month .'><<</a></th>
-			<td colspan=5 align=center class="'. $this->class .'_title">'. $monthName .' '. $year.'</td>
+			<td colspan=5 class="'. $this->class .'_title">'. $monthName .' '. $year.'</td>
 			<th><a href=/event/default/'. $next_year .'-'. $next_month .'>>></a></th>
 			</tr>
 			<tr>
@@ -117,6 +117,6 @@ class Calendar
 		}
 
 		echo '</tr>
-			</table></center>';
+			</table>';
 	}
 }

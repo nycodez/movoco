@@ -1,0 +1,37 @@
+.splashBoxDiv {
+	margin: 5px;
+	padding: 5px;
+	width: 300px;
+	height: 200px;
+	border: solid 1px #999999;
+	border-radius: 10px;
+	background-color: #EFFBFB;
+	float: left;
+	font-family: arial;
+	overflow: auto;
+}
+.splashBoxDiv a {
+	text-decoration: none;
+}
+#splashTasks a:link, #splashTasks a:visited {
+	font: .8em Arial;
+	color: gray;
+}
+#splashCalDiv {
+	margin: 5px;
+	padding: 5px;
+	width: 300px;
+	height: 200px;
+	border: solid 1px #999999;
+	border-radius: 10px;
+	background-color: #EFFBFB;
+	float: left;
+}
+.splashCalDivTable {
+	width: 100%;
+}
+.splashCalDivTable a {
+	text-decoration: none;
+	font-family: Arial;
+	color: #C1ECFA;
+}

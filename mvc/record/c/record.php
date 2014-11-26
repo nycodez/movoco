@@ -98,8 +98,10 @@ class Record extends Controller
 		$info['ifActive'] = true;
 		$info['type'] = 'record';
 		$info['date'] = new MongoDate();
+		$info['user'] = $user;
+		$info['userName'] = $userName;
 		$info['clientName'] = ModelLoad::Load('client', 'getName', $info['client']);
-		$info['userName'] = ModelLoad::Load('user', 'getName', $info['user']);
+		$info['userAssignedName'] = ModelLoad::Load('user', 'getName', $info['userAssigned']);
 		$result = ModelLoad::Load('record', 'add', $info);
 //		Logger::Write('add', 'record', $r['_id']);
 		$view = new View('record');
@@ -163,7 +165,8 @@ class Record extends Controller
 		}
 //		$info = FormScrub::Sanitize($_POST[$_POST['formName']]);
 		$info['clientName'] = ModelLoad::Load('client', 'getName', $info['client']);
-		$info['userName'] = ModelLoad::Load('user', 'getName', $info['user']);
+		$info['user'] = $user;
+		$info['userName'] = $userName;
 		$r = ModelLoad::Load('record', 'save', $info);
 //		Logger::Write('update', 'record', $info['_id']);
 		$view = new View('record');

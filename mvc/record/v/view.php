@@ -14,7 +14,7 @@ $headers = array
  '{type}'=>'',
  '{name}'=>'/record/download/{_id}',
  '{size}'=>'',
- '{upload user name}'=>'',
+ '{user}'=>'',
  '{date}'=>'',
  );
 $table = new Scaffold('files');

@@ -101,7 +101,7 @@ class Auth
 	{
 		$login = strtolower($login);
 		$secret = md5($secret);
-		$result = ModelLoad::Load('user', 'add', array('login'=>$login,'secret'=>$secret,'type'=>'user','ifActive'=>true));
+		$result = ModelLoad::Load('user', 'add', array('login'=>$login,'secret'=>$secret,'type'=>'user','ifActive'=>true,'name'=>'Admin User'));
 	}
 	public function Confirm($login, $secret, $session)
 	{

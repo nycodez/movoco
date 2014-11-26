@@ -12,13 +12,17 @@ class MongoDatabase
 		$this->conn = new MongoClient();
 		$this->db = $this->conn->$dbname;
 	}
-	public function Search($coll, $arr = array(), $one = false)
+	public function Search($coll, $arr = array(), $one = false, $sort = false)
 	{
 		$collection = $this->db->$coll;
 		if($one)
 			$result = $collection->findOne($arr);
 		else
 			$result = $collection->find($arr);
+
+		if($sort)
+			$result->sort($sort);
+
 		return $result;
 	}
 	public function Get($coll, $id)

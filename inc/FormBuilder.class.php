@@ -288,7 +288,7 @@ $elementsDefault = array (
 			'active' => true,
 			'placeholder' => '{select a client}',
 		),
-		'user' => array (
+		'userAssigned' => array (
 			'type' => 'select',
 			'label' => '{user assigned}',
 			'source' => array (

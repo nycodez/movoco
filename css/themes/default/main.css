@@ -1,6 +1,7 @@
 @import url("default.css");
 @import url("accounting.css");
 @import url("scaffold.css");
+@import url("forms.css");
 @import url("calendar.css");
 body {
 	margin: 0px;
@@ -21,21 +22,29 @@ body {
 	padding: 0px;
 }
 #mainBody {
+min-width: 800px;
 	position: absolute;
-	left: 140px;
+	left: 125px;
 	top: 10px;
-//	border:solid 1px pink;
+//	border:solid 1px green;
 	margin: 0px;
 	padding: 0px;
 }
 
+#splashWelcome {
+	font-family: Arial;
+	font-size: 1.3em;
+	margin: 2px;
+	padding: 2px;
+}
 #mainMenu {
+z-index: 1;
 position: fixed;
 	top: 30px;
 	width: 125px;
-border-top: solid 2px #EFFBFB;
-border-right: solid 2px #EFFBFB;
-border-bottom: solid 2px #EFFBFB;
+border-top: groove 2px #eeefff;
+border-right: groove 2px #eeefff;
+border-bottom: groove 2px #eeefff;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
 //	border:solid 1px yellow;
@@ -63,18 +72,19 @@ border-bottom-right-radius: 10px;
 	text-transform: capitalize;
 }
 #mainMenu li a:hover, #mainMenu ul li:hover a{
-	background: #EFFBFB url("/img/hover.gif") bottom center no-repeat;
+	background: #eeefff url("/img/hover.gif") bottom center no-repeat;
 	text-decoration:none;
 }
 #mainMenu li ul{
+	position:absolute;
+	left: 75px;
+background-color: white;
 	display:none;
 	height:auto;
 	padding:0px;
 	margin:0px;
 	border:0px;
-	position:absolute;
 	width:125px;
-	z-index:200;
 }
 
 #mainMenu li:hover ul{
@@ -105,7 +115,7 @@ border-bottom-right-radius: 10px;
 	text-align:left;
 }
 #mainMenu li ul a:hover, #mainMenu li ul li:hover a{
-	background: #EFFBFB url('/img/hover_sub.gif') center left no-repeat;
+	background: #eeefff url('/img/hover_sub.gif') center left no-repeat;
 	border:0px;
 	color: #333333;
 	text-decoration:none;

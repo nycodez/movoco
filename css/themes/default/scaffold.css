@@ -1,12 +1,6 @@
-.scaffoldTable {
-	margin: auto;
-	margin-top: 50px;
-	padding: 10px;
-	width: 80%;
-}
 .scaffoldMenu {
 	padding: 5px 0 0 5px;
-	border-bottom: solid 1px black;
+	border-bottom: solid 2px #eeefff;
 }
 .scaffoldMenu ul {
 	list-style: none;
@@ -15,7 +9,7 @@
 }
 .scaffoldMenu ul li {
 	display: inline;
-	border: solid;
+	border: solid 2px #eeefff;
 	border-width: 1px 1px 0 1px;
 	margin: 0 0.5em 0 0;
 }
@@ -24,6 +18,13 @@
 	text-decoration: none;
 	font: .8em arial;
 	color: black;
+}
+
+.scaffoldTable {
+	width: 95%;
+//	border: solid 1px pink;
+	margin: 20px;
+	padding: 10px;
 }
 .scaffoldTable th, .scaffoldTable th {
 	text-transform: capitalize;
@@ -37,15 +38,17 @@
 	color: blue;
 }
 .selectedItem {
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 	padding-bottom: 2px;
+	color: #666666;
 	background: white;
 }
 .unselectedItem {
-	background-color: #eeeeee;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	background-color: #eeefff;
+	color: #666666;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 }
 .scaffoldTable a {
 	text-decoration: none;

@@ -1,40 +1,48 @@
 /* default */
+
 @import 'http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek-ext,cyrillic-ext,greek,vietnamese,cyrillic,latin-ext';
 
-.formoid-default{
+.formoid-default {
 	margin:0 auto;
+	margin-top: 10px;
+	border: solid 1px #eeefff;
 }
-.formoid-default>div{
+
+.formoid-default > div {
 	margin: 8px;
 }
-.formoid-default .error-field .required{
+
+.formoid-default .error-field .required {
 	color:#FF9999;
 }
+
 .formoid-default .error-field input,
-.formoid-default .error-field textarea{
+.formoid-default .error-field textarea {
 	border-color:#D893A1;
 	background-color: #FBE6F2;
 }
-.formoid-default label.error{
+
+.formoid-default label.error {
   display:inline-block;
   font-size:0.9em;
 }
+
 .formoid-default .error,
-.formoid-default .error #recaptcha_widget_div{
+.formoid-default .error #recaptcha_widget_div {
   padding: 3px 14px;
   margin: 0 8px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   color: #b94a48;
   background-color: #f2dede;
   border-color: #eed3d7;
   color: #c09853;
 }
+
 .formoid-default .error h4 {
   color: #b94a48;
   margin: 0;
@@ -47,26 +55,31 @@
   line-height: 20px;
 }
 
-.formoid-default .column{
+.formoid-default .column {
 	float:left;
 }
 
-.frmd{
+.frmd {
 	display:none;
 }
+
 .clearfix {
   *zoom: 1;
 }
+
 .clearfix:before,
 .clearfix:after {
   display: table;
   line-height: 0;
   content: "";
-}.formoid-default{
-	-webkit-border-radius: 4px;	
-	   -moz-border-radius: 4px;	
-			border-radius: 4px;	
 }
+
+.formoid-default {
+-webkit-border-radius: 4px;	
+-moz-border-radius: 4px;	
+border-radius: 4px;	
+}
+
 .formoid-default,
 .formoid-default div.selector,
 .formoid-default  select,
@@ -89,21 +102,13 @@
 }
 
 /* Global Declaration */
-
-
 .formoid-default .selector, 
 .formoid-default .uploader,
-.formoid-default .uploader *{
+.formoid-default .uploader * {
   margin: 0;
   padding: 0;
 }
 	
-
-
-/* SPRITES */
-
-/* Uploader */
-
 .formoid-default div.uploader {
   /*-background-position: 0px -297px;*/
   /*height: 28px;*/
@@ -136,23 +141,19 @@
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 	border-bottom-color: #a2a2a2;
 	-webkit-border-radius: 0 4px 4px 0;
-	   -moz-border-radius: 0 4px 4px 0;
-		    border-radius: 0 4px 4px 0;
+	-moz-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 	*zoom: 1;
 	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-	   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-		    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-		  
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 	display: inline-block;
-
 	padding: 5px 12px;
 	text-align: center;
-	
 	float: left;
 	display: inline;
-	
 	overflow: hidden;
 	cursor: pointer;
 	width: 80px;
@@ -274,6 +275,7 @@ Not advised to edit stuff below this line
 .formoid-default  select,
 .formoid-default button,
 .formoid-default .btn, 
+
 .formoid-default button[type=submit]{
   display: -moz-inline-box;
   display: inline-block;
@@ -317,6 +319,7 @@ Not advised to edit stuff below this line
 .formoid-default  select:hover,
 .formoid-default button:hover,
 .formoid-default .btn:hover,
+
 .formoid-default button:active,
 .formoid-default button[disabled]{
   color: #333333;
@@ -327,6 +330,7 @@ Not advised to edit stuff below this line
 .formoid-default div.selector:active,
 .formoid-default  select:active,
 .formoid-default .btn:active,
+
 .formoid-default button:active{
   background-color: #cccccc;
 }
@@ -334,6 +338,7 @@ Not advised to edit stuff below this line
 .formoid-default div.selector:hover,
 .formoid-default  select:hover,
 .formoid-default .btn:hover,
+
 .formoid-default button:hover {
   color: #333333;
   text-decoration: none;
@@ -347,6 +352,7 @@ Not advised to edit stuff below this line
 .formoid-default div.selector:active,
 .formoid-default  select:active,
 .formoid-default .btn:active,
+
 .formoid-default button:active {
   background-image: none;
   outline: 0;
@@ -356,6 +362,7 @@ Not advised to edit stuff below this line
 }
 
 .formoid-default .btn[disabled],
+
 .formoid-default button[disabled] {
   cursor: default;
   background-image: none;
@@ -540,6 +547,7 @@ Not advised to edit stuff below this line
 
 
 /* prevent conflicts with bootstrap */
+
 .formoid-default .dropdown-menu input[type=checkbox]{
 	display:none;
 }

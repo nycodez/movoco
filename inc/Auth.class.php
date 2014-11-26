@@ -4,7 +4,7 @@ session_start();
 
 $auth = new Auth();
 
-if(isset($_REQUEST['logout']))
+if($_REQUEST['logout'])
 {
 	$auth->Logout();
 }
@@ -12,7 +12,7 @@ elseif(isset($_REQUEST['func']) && $_REQUEST['func'] == 'Login')
 {
 	$auth->Authenticate($_POST['login'], $_POST['pass']);
 }
-elseif(isset($_REQUEST['func']) && $_REQUEST['func'] == 'Add User')
+elseif(isset($_REQUEST['func']) && $_REQUEST['func'] == 'Add First User')
 {
 	$auth->AddAdminUser($_POST['login'], $_POST['pass']);
 	$auth->Login();
@@ -45,7 +45,7 @@ class Auth
 				<form method=post name="addAdminForm">
 				<input type=text name=login class=login placeholder="login" />
 				<input type=password name=pass class=login placeholder="password" />
-				<input type=submit name=func value="Add User"class=inputButton />
+				<input type=submit name=func value="Add First User"class=inputButton />
 				</form>';
 		}
 		exit;
@@ -67,6 +67,7 @@ class Auth
 			$_SESSION['authenticated'] = TRUE;
 			$_SESSION['username'] = $login;
 			$_SESSION['password'] = $secret;
+			$_SESSION['name'] = $v['name'];
 			$_SESSION['session'] = $session;
 			$_SESSION['uid'] = $id;
 

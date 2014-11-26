@@ -9,7 +9,7 @@ class User_Model extends Model
 	}
 	public function getActiveUsers()
 	{
-		$r = $this->db->Search('entity', array('type'=>'user','ifActive'=>true));
+		$r = $this->db->Search('entity', array('type'=>'user','ifActive'=>true, 'sort' =>'name'));
 		return $r;
 	}
 	public function checkForAnyUsers()

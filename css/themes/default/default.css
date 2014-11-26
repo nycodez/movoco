@@ -9,6 +9,7 @@
 	float: left;
 	font-family: arial;
 	overflow: auto;
+	z-index: 10;
 }
 .splashBoxDiv a {
 	text-decoration: none;

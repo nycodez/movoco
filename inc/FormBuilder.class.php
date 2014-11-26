@@ -1,18 +1,27 @@
 <?php
 $elementsDefault = array (
 	'client' => array (
-		'name' => array (
+		'fullname' => array (
 			'type' => 'text',
-			'label' => 'client name',
+			'label' => 'client full name',
 			'size' => 40,
 			'length' => 100,
 			'active' => true,
 			'required' => true,
 			'placeholder' => 'Business Widgets, Inc.',
 		),
+		'name' => array (
+			'type' => 'text',
+			'label' => 'name',
+			'size' => 40,
+			'length' => 100,
+			'active' => true,
+			'required' => true,
+			'placeholder' => 'BizWidgets',
+		),
 		'industry' => array (
 			'type' => 'select',
-			'label' => 'client industry',
+			'label' => 'industry',
 			'options' => array (
 				'Legal' => 'Legal',
 				'Medical' => 'Medical',
@@ -77,7 +86,7 @@ $elementsDefault = array (
 		),
 		'title' => array (
 			'type' => 'text',
-			'label' => '{business title}',
+			'label' => '{title}',
 			'size' => 40,
 			'length' => 100,
 			'active' => true,
@@ -196,7 +205,7 @@ $elementsDefault = array (
 			'type' => 'text',
 			'label' => '{user password}',
 			'size' => 40,
-			'hidden' => true,
+			'hidden' => false,
 			'length' => 100,
 			'active' => true,
 			'required' => true,
@@ -223,16 +232,25 @@ $elementsDefault = array (
 	'record' => array (
 		'name' => array (
 			'type' => 'text',
-			'label' => '{record name}',
+			'label' => '{quick subject}',
 			'size' => 40,
 			'length' => 100,
 			'active' => true,
 			'required' => true,
 			'placeholder' => 'Fall Profit Spreadsheet',
 		),
+		'details' => array (
+			'type' => 'textarea',
+			'label' => '{details}',
+			'cols' => 30,
+			'rows' => 3,
+			'active' => true,
+			'required' => false,
+			'placeholder' => 'Record Details',
+		),
 		'attachment' => array (
 			'type' => 'file',
-			'label' => '{attachment}',
+			'label' => '{attachments}',
 			'active' => true,
 		),
 		'subtype' => array (

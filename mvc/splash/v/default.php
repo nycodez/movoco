@@ -1,3 +1,4 @@
+<div id=splashWelcome>Welcome, <?php echo $_SESSION['name']; ?></div>
 <div class=splashBoxDiv id=splashRecords><div class=title>{open records}</div>
 <?php
 foreach($records as $k => $v)

@@ -83,7 +83,21 @@ class Scaffold
 					}
 					else
 					{
-						echo '<td>'. $v[$kk] .'</td>';
+						echo '<td>';
+						switch($kk)
+						{
+							case 'date':
+								global $defaultDateFormat;
+								echo date($defaultDateFormat, $v[$kk]->sec);
+								break;
+							case 'size':
+								echo bytesToSize($v[$kk]);
+								break;
+							default:
+								echo $v[$kk];
+								break;
+						}
+						echo '</td>';
 					}
 				}
 				echo '</tr>';

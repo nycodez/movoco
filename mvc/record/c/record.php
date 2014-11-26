@@ -94,9 +94,10 @@ class Record extends Controller
 					);
 			}
 		}
-		//		$new = FormScrub::Sanitize($_POST[$_POST['formName']]);
+//		$new = FormScrub::Sanitize($_POST[$_POST['formName']]);
 		$info['ifActive'] = true;
 		$info['type'] = 'record';
+		$info['date'] = new MongoDate();
 		$info['clientName'] = ModelLoad::Load('client', 'getName', $info['client']);
 		$info['userName'] = ModelLoad::Load('user', 'getName', $info['user']);
 		$result = ModelLoad::Load('record', 'add', $info);

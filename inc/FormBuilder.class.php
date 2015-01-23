@@ -208,6 +208,7 @@ $elementsDefault = array (
 			'hidden' => false,
 			'length' => 100,
 			'active' => true,
+			'readonly' => true,
 			'required' => true,
 			'placeholder' => 'secret password',
 		),
@@ -245,6 +246,7 @@ $elementsDefault = array (
 			'cols' => 30,
 			'rows' => 3,
 			'active' => true,
+			'readonly' => true,
 			'required' => false,
 			'placeholder' => 'Record Details',
 		),
@@ -464,6 +466,11 @@ class FormBuilder
 				continue;
 			}
 
+			if(isset($v['readonly']) && $v['readonly'])
+				$readOnly = 'readonly';
+			else
+				$readOnly = 'write';
+
 			$str .= '<div class=element-input>';
 
 			if($v['label'] && $this->labels)
@@ -481,26 +488,26 @@ class FormBuilder
 			switch($v['type'])
 			{
 			case 'check':
-				$str .= $this->AddCheckBox($k, $default, 1);
+				$str .= $this->AddCheckBox($k, $default, 1, false, array($readOnly => $readOnly ));
 				if(isset($v['placeholder']))
 				{
 					$str .= '<span>'. $v['placeholder'] .'</span>';
 				}
 				break;
 			case 'radio':
-				$str .= $this->AddRadioButton($k, $default, 1);
+				$str .= $this->AddRadioButton($k, $default, 1, false, array($readOnly => $readOnly ));
 				break;
 			case 'text':
-				$str .= $this->AddTextField($k, $default, $v['size'], $v['length'], array('placeholder' => $v['placeholder']));
+				$str .= $this->AddTextField($k, $default, $v['size'], $v['length'], array($readOnly => $readOnly, 'placeholder' => $v['placeholder']));
 				break;
 			case 'file':
 				$str .= $this->AddFileButton('file[]', true);
 				break;
 			case 'date':
-				$str .= $this->AddTextField($k, $default, $v['size'], $v['length'], array('class' => 'datepicker', 'placeholder' => $v['placeholder']));
+				$str .= $this->AddTextField($k, $default, $v['size'], $v['length'], array($readOnly => $readOnly, 'class' => 'datepicker', 'placeholder' => $v['placeholder']));
 				break;
 			case 'textarea':
-				$str .= $this->AddTextArea($k, $default, $v['size'], $v['length'], array('placeholder' => $v['placeholder']));
+				$str .= $this->AddTextArea($k, $default, $v['size'], $v['length'], array($readOnly => $readOnly, 'placeholder' => $v['placeholder']));
 				break;
 			case 'select':
 				if(is_array($v['options']))
